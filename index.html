@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<head>
+    <title>MainProject</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body style="text-align: center">
+    <h1>Project: Bringing it all together by Julio Gabriel Argenal</h1>
+    <div class="card">
+        <h5 class="card-header">Oldest</h5>
+        <div class="card-body">
+            <a id="showOldest" href="#" class="btn btn-primary">Retrieve Data</a>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">JSON</h5>
+            <p id="oldestJson" class="card-text"></p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h5 class="card-header">Number of Employees in Each Department</h5>
+        <div class="card-body">
+            <a id="showDeptEmp" href="#" class="btn btn-primary">Retrieve Data</a>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">JSON</h5>
+            <p id="deptEmp" class="card-text"></p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h5 class="card-header">Department Manager by Gender</h5>
+        <div class="card-body">
+            <a id="showDeptMan" href="#" class="btn btn-primary">Retrieve Data</a>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">JSON</h5>
+            <p id="deptMan" class="card-text"></p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h5 class="card-header">Highest Paid Employee (Male and Female)</h5>
+        <div class="card-body">
+            <a id="showHighPaid" href="#" class="btn btn-primary">Retrieve Data</a>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">JSON</h5>
+            <p id="highPaid" class="card-text"></p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h5 class="card-header">Average Duration of each title</h5>
+        <div class="card-body">
+            <a id="showAvgdDur" href="#" class="btn btn-primary">Retrieve Data</a>
+            <br/><br/>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">JSON</h5>
+            <p id="avgdDur" class="card-text"></p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    
+        $("#showOldest").on("click", function () {
+            $.get("/oldest", function (data) {
+                $("#oldestJson").text(data);
+            });
+        });
+
+        $("#showDeptEmp").on("click", function () {
+            $.get("/deptEmp", function (data) {
+                $("#deptEmp").text(data);
+            });
+        });
+
+        $("#showDeptMan").on("click", function () {
+            $.get("/deptMan", function (data) {
+                $("#deptMan").text(data);
+            });
+        });
+
+        $("#showHighPaid").on("click", function () {
+            $.get("/highPaid", function (data) {
+                $("#highPaid").text(data);
+            });
+        });
+
+        $("#showAvgDur").on("click", function () {
+            $.get("/avgDur", function (data) {
+                $("#avgDur").text(data);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

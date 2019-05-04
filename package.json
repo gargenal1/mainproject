@@ -1,0 +1,18 @@
+{
+  "name": "mainproject",
+  "version": "1.0.0",
+  "description": "hw3 package",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabe",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "express": "^4.16.4",
+    "mongodb": "^3.2.3",
+    "mongojs": "^2.6.0"
+  }
+}
