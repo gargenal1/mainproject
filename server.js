@@ -5,8 +5,8 @@ const fs = require('fs');
 var query1 = fs.readFileSync('query1.json', 'utf8');
 var query2 = fs.readFileSync('query2.json', 'utf8');
 var query3 = fs.readFileSync('query3.json', 'utf8');
-// var query4 = fs.readFileSync('query4.json', 'utf8');
-// var query5 = fs.readFileSync('query5.json', 'utf8');
+var query4 = fs.readFileSync('query4.json', 'utf8');
+var query5 = fs.readFileSync('query5.json', 'utf8');
 
 var port = process.env.PORT || 3000;
 
