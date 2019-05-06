@@ -1,2 +1,2 @@
-{ "_id" : "F", "maxSalary" : 121468 }
-{ "_id" : "M", "maxSalary" : 129492 }
+[{ "_id" : "F", "maxSalary" : 152710 },
+{ "_id" : "M", "maxSalary" : 158220 }]

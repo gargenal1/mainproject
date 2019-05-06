@@ -49,7 +49,7 @@ app.get('/highPaid', function (req, res) {
   return res.json(query4)
 });
 
-app.get('/avgdDur', function (req, res) {
+app.get('/avgDur', function (req, res) {
   return res.json(query5)
 });
 

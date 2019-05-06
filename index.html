@@ -7,64 +7,66 @@
 
 <body style="text-align: center">
     <h1>Project: Bringing it all together by Julio Gabriel Argenal</h1>
-    <div >
-        <h5 >Oldest</h5>
+    <div>
+        <h4 >1.) Oldest Employee (Male and Female)</h4>
         <div >
-            <a id="showOldest" href="#">Retrieve Data</a>
+            <button id="showOldest" href="#">Retrieve Data</button>
         </div>
         <div>
             <h5 >JSON</h5>
             <p id="oldestJson"></p>
         </div>
     </div>
-
-    <div class="card">
-        <h5 class="card-header">Number of Employees in Each Department</h5>
-        <div class="card-body">
-            <a id="showDeptEmp" href="#" class="btn btn-primary">Retrieve Data</a>
+    <hr>
+    <div >
+        <h4 >2.) Number of Employees in Each Department</h4>
+        <div >
+            <button id="showDeptEmp" href="#">Retrieve Data</button>
         </div>
-        <div class="card-body">
-            <h5 class="card-title">JSON</h5>
-            <p id="deptEmp" class="card-text"></p>
-        </div>
-    </div>
-
-    <div class="card">
-        <h5 class="card-header">Department Manager by Gender</h5>
-        <div class="card-body">
-            <a id="showDeptMan" href="#" class="btn btn-primary">Retrieve Data</a>
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">JSON</h5>
-            <p id="deptMan" class="card-text"></p>
+        <div>
+            <h5>JSON</h5>
+            <p id="deptEmp"></p>
         </div>
     </div>
+    <hr>
 
-    <div class="card">
-        <h5 class="card-header">Highest Paid Employee (Male and Female)</h5>
-        <div class="card-body">
-            <a id="showHighPaid" href="#" class="btn btn-primary">Retrieve Data</a>
+    <div>
+        <h4>3.) Department Managers by Gender</h4>
+        <div>
+            <button id="showDeptMan" href="#" >Retrieve Data</button>
         </div>
-        <div class="card-body">
-            <h5 class="card-title">JSON</h5>
-            <p id="highPaid" class="card-text"></p>
+        <div>
+            <h5>JSON</h5>
+            <p id="deptMan"></p>
         </div>
     </div>
-
-    <div class="card">
-        <h5 class="card-header">Average Duration of each title</h5>
-        <div class="card-body">
-            <a id="showAvgdDur" href="#" class="btn btn-primary">Retrieve Data</a>
-            <br/><br/>
+    <hr>
+    <div>
+        <h4>4.) Highest Paid Employee (Male and Female)</h4>
+        <div>
+            <button id="showHighPaid" href="#">Retrieve Data</button>
         </div>
-        <div class="card-body">
-            <h5 class="card-title">JSON</h5>
-            <p id="avgdDur" class="card-text"></p>
+        <div>
+            <h5>JSON</h5>
+            <p id="highPaid"></p>
+        </div>
+    </div>
+    <hr>
+    <div>
+    <div>
+        <h4>5.) Average Duration of Each Title</h4>
+        <div>
+            <button id="showAvgDur" href="#">Retrieve Data</button>
+            <br /><br />
+        </div>
+        <div>
+            <h5>JSON</h5>
+            <p id="avgDur"></p>
         </div>
     </div>
 
     <script type="text/javascript">
-    
+
         $("#showOldest").on("click", function () {
             $.get("/oldest", function (data) {
                 $("#oldestJson").text(data);

@@ -1,7 +1,7 @@
-{ "_id" : "Manager", "AvginMili" : 94836517200000, "AvginDays" : 1097644.875 }
-{ "_id" : "Technique Leader", "AvginMili" : 200954297758955.06, "AvginDays" : 2325859.9277656837 }
-{ "_id" : "Engineer", "AvginMili" : 68162333175725.85, "AvginDays" : 788915.8932375677 }
-{ "_id" : "Senior Staff", "AvginMili" : 223110252072346.62, "AvginDays" : 2582294.5841706786 }
-{ "_id" : "Senior Engineer", "AvginMili" : 222050320848073.66, "AvginDays" : 2570026.861667519 }
-{ "_id" : "Assistant Engineer", "AvginMili" : 60032219932099.42, "AvginDays" : 694817.3603252248 }
-{ "_id" : "Staff", "AvginMili" : 60163190096957.84, "AvginDays" : 696333.2187147898 }
+[{ "_id" : "Manager", "AvginMili" : 94836517200000, "AvginDays" : 1097644.875 },
+{ "_id" : "Technique Leader", "AvginMili" : 200954297758955.06, "AvginDays" : 2325859.9277656837 },
+{ "_id" : "Engineer", "AvginMili" : 68162333175725.85, "AvginDays" : 788915.8932375677 },
+{ "_id" : "Senior Staff", "AvginMili" : 223110252072346.62, "AvginDays" : 2582294.5841706786 },
+{ "_id" : "Senior Engineer", "AvginMili" : 222050320848073.66, "AvginDays" : 2570026.861667519 },
+{ "_id" : "Assistant Engineer", "AvginMili" : 60032219932099.42, "AvginDays" : 694817.3603252248 },
+{ "_id" : "Staff", "AvginMili" : 60163190096957.84, "AvginDays" : 696333.2187147898 }]
